@@ -70,13 +70,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Pastikan modal selalu berada di tengah vertikal */
+    min-height: 100vh;
 }
 
-/* Perbesar gambar di dalam modal */
 .menu-image {
-    max-width: 90%; /* Gambar akan memenuhi 90% lebar modal */
-    max-height: 80vh; /* Gambar akan memenuhi 80% tinggi viewport */
+    max-width: 90%; 
+    max-height: 80vh; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -266,7 +265,7 @@ a.link-to-book:hover {
 
 .map-container iframe {
     width: 100%;
-    max-width: 400px; /* default size on large screens */
+    max-width: 400px; 
     height: 300px;
     border: 0;
 }
@@ -313,12 +312,12 @@ a.link-to-book:hover {
     }
 
     .carousel-inner {
-        height: auto; /* Pastikan carousel menyesuaikan tinggi konten */
+        height: auto; 
     }
 
     .carousel-inner img {
         height: auto;
-        max-height: 300px; /* Batasi tinggi gambar pada layar kecil */
+        max-height: 300px; 
     }
 }
 
