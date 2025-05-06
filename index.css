@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.nav-flex-row {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-flex-row li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-flex-row li a {
+    color: #ffffff;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.nav-flex-row li a:hover {
+    color: #ffcc00;
+}
+
+
+/* Hero section styling */
+.section-intro {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.section-intro h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Pastikan modal selalu berada di tengah vertikal */
+}
+
+/* Perbesar gambar di dalam modal */
+.menu-image {
+    max-width: 90%; /* Gambar akan memenuhi 90% lebar modal */
+    max-height: 80vh; /* Gambar akan memenuhi 80% tinggi viewport */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-to-book:hover {
+    background-color: #ffcc00;
+    color: #000000;
+    border-color: #ffcc00;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn-animated {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-animated:hover {
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: #ffcc00;
+    border: none;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e6b800;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+
+
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.carousel-inner img {
+    filter: brightness(0.8);
+    transition: filter 0.3s ease-in-out;
+}
+
+.carousel-inner img:hover {
+    filter: brightness(1);
+}
+
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.opening-time h3 {
+    margin-top: 12px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.opening-time-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.opening-time-table td {
+    padding: 8px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.opening-time-table tr:last-child td {
+    border-bottom: none;
+}
+
+.contact-adress p span {
+    display: block;
+}
+
+/* WhatsApp link styling */
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #25D366;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.whatsapp-link i {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.whatsapp-link:hover {
+    color: #128C7E;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 400px; /* default size on large screens */
+    height: 300px;
+    border: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .row-flex {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .flex-column-form {
+        margin: 10px 0;
+    }
+
+    .form-group input {
+        width: 100%;
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .form-group p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .btn.btn-primary {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+    .link-to-book-wrapper {
+        margin-top: 20px;
+    }
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-section h3 {
+        font-size: 2em;
+    }
+    .about-section p {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .carousel-inner {
+        height: auto; /* Pastikan carousel menyesuaikan tinggi konten */
+    }
+
+    .carousel-inner img {
+        height: auto;
+        max-height: 300px; /* Batasi tinggi gambar pada layar kecil */
+    }
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+    .row-flex {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .flex-column-form {
+        margin: 15px 0;
+    }
+
+    .form-group input {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    .btn.btn-primary {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
